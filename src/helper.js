@@ -51,9 +51,6 @@ function filterData(data, query) {
 }
 
 function closetGeoLocation(searchData, dataObject) {
-  const location1 = { lat: 51, lon: 4 };
-  const location2 = { lat: 51.001, lon: 4.001 };
-
   const { closest: paramLocation } = searchData;
   //parseNumber
   paramLocation.latitude = parseFloat(paramLocation.latitude);

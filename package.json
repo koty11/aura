@@ -1,0 +1,27 @@
+{
+  "name": "aura-challenge-zips",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "jest": "^26.0.1",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "fake-api-gateway-lambda": "^2.0.0",
+    "geolocation-utils": "^1.2.3",
+    "qs": "^6.9.6"
+  },
+  "scripts": {
+    "dev": "node dev/index.js",
+    "format:fix": "prettier --write **/*.{js,ts,md}",
+    "test": "jest"
+  }
+}

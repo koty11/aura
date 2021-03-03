@@ -1,12 +1,21 @@
 # Documentation
 - npm install
 - npm run dev (running on localhost:8080)
-- Ex: GET http://localhost:8080/zipcode?zip[contain]=06928&state[eq]=CT&primary_city[eq]=Stamford
+- Search by by zip, state, etc..., partial or eq
+- GET http://localhost:8080/zipcode?zip[contain]=06928&state[eq]=CT&primary_city[eq]=Stamford
 
 ```curl
 curl -i -X GET \
    -H "Content-Type:application/json" \
  'http://localhost:8080/zipcode?zip%5Bcontain%5D=06928&state%5Beq%5D=CT&primary_city%5Beq%5D=Stamford'
+```
+- Search for closest GeoLocation
+- GET http://localhost:8080/zipcode?closest[latitude]=42.06&closest[longitude]=-72.62
+
+```curl
+curl -i -X GET \
+   -H "Content-Type:application/json" \
+ 'http://localhost:8080/zipcode?closest%5Blatitude%5D=42.06&closest%5Blongitude%5D=-72.62'
 ```
 
 # Aura Code Challenge

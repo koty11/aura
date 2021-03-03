@@ -1,4 +1,5 @@
 # Documentation
+
 - npm install
 - npm run dev (running on localhost:8080)
 - Search by by zip, state, etc..., partial or eq
@@ -9,6 +10,7 @@ curl -i -X GET \
    -H "Content-Type:application/json" \
  'http://localhost:8080/zipcode?zip%5Bcontain%5D=06928&state%5Beq%5D=CT&primary_city%5Beq%5D=Stamford'
 ```
+
 - Search for closest GeoLocation
 - GET http://localhost:8080/zipcode?closest[latitude]=42.06&closest[longitude]=-72.62
 
